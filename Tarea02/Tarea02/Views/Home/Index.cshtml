@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-sm-8">
+            <h1>Bienvenido</h1>
+            <p class="lead">Sistema de mantenimiento de acceso premier</p>
+        </div>
+        <div class="col-sm-4">
+            <center>
+                <img class="logo" src="~/Resources/logo.png" />
+            </center>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2> <img src="~/Resources/person-circle.svg" width="25px" height="25px" /> @Html.ActionLink("PERSONAS", "Index", "personas")</h2>
+        <p>
+            Mantenimiento para personas.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2><img src="~/Resources/file-ruled.svg" width="25px" height="25px" /> @Html.ActionLink("ROLES", "Index", "rols")</h2>
+        <p>
+            Mantenimiento para roles.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2><img src="~/Resources/camera-reels.svg" width="25px" height="25px" /> @Html.ActionLink("PELICULAS", "Index", "peliculas")</h2>
+        <p>
+            Mantenimiento para películas.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2><img src="~/Resources/star.svg" width="25px" height="25px" /> @Html.ActionLink("ACCESO PREMIER", "Index", "acceso_premier")</h2>
+        <p>
+            Mantenimiento para acceso premier de películas.
+        </p>
+    </div>
+</div>
